@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/housebase_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/housebase_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/mine_man" />
+
+    <TextView
+        android:id="@+id/housebase_houselocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/housebase_head"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@id/housebase_head"
+        android:text="北京市朝阳区风格雅苑小区"
+        android:textColor="#d000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/housebase_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/housebase_head"
+        android:layout_below="@id/housebase_head"
+        android:layout_marginTop="12dp"
+        android:text="陈妍希"
+        android:textColor="#d000"
+        android:visibility="visible"
+
+        />
+
+    <TextView
+        android:id="@+id/housebase_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/housebase_houselocation"
+        android:layout_below="@id/housebase_houselocation"
+        android:layout_marginTop="12dp"
+        android:text="租金：1800元/月"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/housebase_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/housebase_price"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/housebase_price"
+        android:text="盈利：佣金2%"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/housebase_housefloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/housebase_houselocation"
+        android:layout_below="@id/housebase_price"
+        android:layout_marginTop="12dp"
+        android:text="楼层：6层" />
+
+    <TextView
+        android:id="@+id/housebase_housesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/housebase_profit"
+        android:layout_alignTop="@id/housebase_housefloor"
+        android:text="使用面积：83 m²" />
+
+    <TextView
+        android:id="@+id/housebase_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/housebase_housesize"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="12dp"
+        android:text="2017.01.01" />
+
+    <ToggleButton
+        android:id="@+id/tb_onoff"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@id/housebase_housefloor"
+        android:layout_alignTop="@id/housebase_time"
+        android:textColor="@color/colorWhite"
+        android:background="@color/btn_blue_normal"
+        android:textOff="下架"
+        android:textOn="重新上架"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</RelativeLayout>

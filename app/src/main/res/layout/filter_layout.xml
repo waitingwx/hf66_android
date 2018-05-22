@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+<TableLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content">
+    <TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_d"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal"
+    android:weightSum="3">
+    <TextView
+        android:layout_width="0dp"
+        android:text="价格区间"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+    <EditText
+        android:hint="1000元"
+        android:id="@+id/et_prevalue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#cc000000"
+        android:button="@null"
+        android:singleLine="true"
+        android:inputType="number"
+        android:theme="@style/MyEditText"
+        android:textSize="13dp"
+        android:layout_weight="1"
+        android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到"
+            />
+
+        <EditText
+            android:id="@+id/et_endvalue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:hint="2000元"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#cc000000"
+            android:textSize="13dp"
+            android:theme="@style/MyEditText" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_e"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:text="面积区间"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <EditText
+            android:hint="100㎡"
+            android:id="@+id/et_prearea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到"
+            />
+        <EditText
+            android:hint="200㎡"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:id="@+id/et_endarea"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_age"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:text="年代区间"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <EditText
+            android:hint="2000年"
+            android:id="@+id/et_preage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到"
+            />
+        <EditText
+            android:hint="2017年"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:id="@+id/et_endage"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_floor"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:text="楼层区间"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <EditText
+            android:hint="10层"
+            android:id="@+id/et_prefloor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:layout_weight="1"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到"
+            />
+        <EditText
+            android:hint="20层"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#cc000000"
+            android:button="@null"
+            android:id="@+id/et_endfloor"
+            android:singleLine="true"
+            android:inputType="number"
+            android:theme="@style/MyEditText"
+            android:textSize="13dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_bedroom"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:text="户型"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:id="@+id/rg_bedroom"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:text="0室"
+                    style="@style/filterCheckbox"/>
+                <RadioButton
+                    android:text="1室"
+                    style="@style/filterCheckbox"/>
+                <RadioButton
+                    android:text="2室"
+                    style="@style/filterCheckbox"/>
+                <RadioButton
+                    android:text="3室"
+                    style="@style/filterCheckbox"/>
+                <RadioButton
+                    android:text="4室"
+                    style="@style/filterCheckbox"/>
+            </RadioGroup>
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_livingroom"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_livingroom"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="0厅"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="1厅"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="2厅"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="3厅"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="4厅"
+                style="@style/filterCheckbox"/>
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_bathroom"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_bathroom"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="0卫"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="1卫"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="2卫"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="3卫"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="4卫"
+                style="@style/filterCheckbox"/>
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_kitchen"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_kitchen"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="0厨"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="1厨"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="2厨"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="3厨"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="4厨"
+                style="@style/filterCheckbox"/>
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_balcony"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_balcony"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="0阳"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="1阳"
+                style="@style/filterCheckbox"/>
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                style="@style/filterCheckbox"
+                android:text="2阳" />
+
+            <RadioButton
+                android:text="3阳"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="4阳"
+                style="@style/filterCheckbox"/>
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_aspect"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:text="朝向"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_aspect"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:text="东"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="南"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="西"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="北"
+                style="@style/filterCheckbox"/>
+
+        </RadioGroup>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tr_decoration"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:text="装修"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:id="@+id/rg_decoration"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/filterCheckbox"
+                android:text="毛坯" />
+
+            <RadioButton
+                android:text="简装"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="精装"
+                style="@style/filterCheckbox"/>
+            <RadioButton
+                android:text="豪装"
+                style="@style/filterCheckbox"/>
+
+        </RadioGroup>
+    </TableRow>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_blue"
+        >
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+</TableLayout>
+
+
+
+
+</RelativeLayout>

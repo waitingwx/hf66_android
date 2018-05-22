@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="10dp"
+    >
+
+
+        <ImageView
+            android:id="@+id/find_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_head_text"
+        android:text="寻找房源"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"/>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorWhite"-->
+                <!--&gt;-->
+                <!--<Button-->
+                    <!--android:id="@+id/find_sellbutton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/colorBlue"-->
+                    <!--android:background="?android:attr/selectableItemBackground"-->
+                    <!--android:minWidth="50dp"-->
+                    <!--android:minHeight="0dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:text="买卖找房"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorWhite"-->
+                <!--android:layout_toRightOf="@id/layout1"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--&gt;-->
+                <!--<Button-->
+                    <!--android:id="@+id/find_rentbutton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/black9a"-->
+                    <!--android:background="?android:attr/selectableItemBackground"-->
+                    <!--android:minWidth="50dp"-->
+                    <!--android:minHeight="0dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="租赁找房"-->
+                    <!--android:textSize="16sp"-->
+
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

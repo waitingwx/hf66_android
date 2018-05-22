@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="48dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:textColorHint="#dcdbdb"
+        android:theme="@style/MyInputEditText">
+
+        <EditText
+            android:id="@+id/register_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/btn_login_phone_d"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:textColorHint="#dcdbdb"
+            android:theme="@style/MyInputEditText">
+
+            <EditText
+                android:id="@+id/register_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/registration_validation"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yzm_shape"
+            android:text="获取验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="请输入6-18位密码"
+        android:textColorHint="#dcdbdb"
+        android:theme="@style/MyEditText">
+
+        <EditText
+            android:id="@+id/Register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/btn_login_lock_d"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="请再次输入密码"
+        android:textColorHint="#dcdbdb"
+        android:theme="@style/MyInputEditText">
+
+        <EditText
+            android:id="@+id/Register_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/btn_login_lock_d"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Register_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="选择注册代表您已同意房源宝协议"
+            android:textColor="#dcdbdb"
+            android:textSize="12sp"
+            android:theme="@style/mycheckbox" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_radius_white">
+
+        <Button
+            android:id="@+id/Register_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="注册"
+            android:textColor="#2D7DDE"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

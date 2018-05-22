@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/shape_radius_white"
+    >
+
+    <TextView
+        android:id="@+id/dialog_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与他(她)聊天"
+        android:drawableLeft="@mipmap/mine_man"
+        android:gravity="center"
+        android:clickable="true"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/dialog_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与他(她)交易"
+        android:drawableLeft="@mipmap/deal"
+        android:gravity="center"
+        android:clickable="true"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

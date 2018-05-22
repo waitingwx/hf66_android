@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cqxy.fyb.FindHouseActivity">
+
+    <include layout="@layout/findhouse_headlayout"
+        android:id="@+id/include_head_find"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:id="@+id/ll_spinner"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/include_head_find"
+        android:padding="5dp">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/find_selectarea"
+            style="@style/dropdown_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/find_selectshop"
+            style="@style/dropdown_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/find_selecthouse"
+            style="@style/dropdown_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+        <TextView
+            android:id="@+id/find_others"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="4dp"
+            android:drawableStart="@mipmap/more" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/find_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll_spinner"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/find_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/smssdk_gray_press">
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/find_left"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" />
+
+        <FrameLayout
+            android:id="@+id/find_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+    <com.cqxy.view.LoadingView
+        android:id="@+id/loading_enter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

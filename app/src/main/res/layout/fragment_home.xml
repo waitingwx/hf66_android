@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cqxy.fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/home_headlayout"></include>
+
+        <include layout="@layout/housedetial_vplayout"></include>
+
+        <include layout="@layout/home_zhanbaolayout"></include>
+
+        <include layout="@layout/home_functionlayout"></include>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

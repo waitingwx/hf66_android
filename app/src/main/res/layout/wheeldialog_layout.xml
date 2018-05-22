@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape_radius_white"
+
+    >
+
+    <TextView
+        android:id="@+id/wheeldialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置楼层"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:gravity="center"
+        android:padding="10dp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/gray_pressed">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheeldialog_wheelview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            >
+
+        </com.wx.wheelview.widget.WheelView>
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheeldialog_wheelview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            >
+
+        </com.wx.wheelview.widget.WheelView>
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheeldialog_wheelview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginLeft="1dp"
+            >
+
+        </com.wx.wheelview.widget.WheelView>
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheeldialog_wheelview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:visibility="gone"
+            >
+
+        </com.wx.wheelview.widget.WheelView>
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/wheeldialog_wheelview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginLeft="1dp"
+            >
+
+        </com.wx.wheelview.widget.WheelView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wheeldialog_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/select_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+</LinearLayout>

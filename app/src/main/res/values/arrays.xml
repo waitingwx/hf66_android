@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="decoration">
+        <item >毛坯</item>
+        <item >简装</item>
+        <item >精装</item>
+        <item >豪装</item>
+    </string-array>
+    <string-array name="built_type">
+        <item >普通住宅</item>
+        <item >别墅</item>
+        <item >四合院</item>
+        <item >公寓</item>
+        <item >酒店式公寓</item>
+    </string-array>
+    <string-array name="built_structure">
+        <item >平层</item>
+        <item >错层</item>
+        <item >跃层</item>
+        <item >复式</item>
+        <item >开间</item>
+    </string-array>
+    <string-array name="nature_of_property_right">
+        <item >商品房</item>
+        <item >限价房</item>
+        <item >央产房</item>
+        <item >个人产权</item>
+        <item >使用权</item>
+        <item >单位产权</item>
+        <item >经济适用房</item>
+        <item >军产房</item>
+    </string-array>
+
+    <string-array name="paytype">
+        <item >月付</item>
+        <item >季付</item>
+        <item >半年付</item>
+        <item >年付</item>
+    </string-array>
+    <string-array name="builttype">
+        <item >独栋</item>
+        <item >双拼</item>
+        <item >联排</item>
+        <item >叠加</item>
+    </string-array>
+    <string-array name="officelevel">
+        <item >甲级</item>
+        <item >乙级</item>
+        <item >丙级</item>
+        <item >其他</item>
+    </string-array>
+    <string-array name="yesorno">
+        <item >是</item>
+        <item >否</item>
+    </string-array>
+    <string-array name="officetype">
+        <item >纯写字楼</item>
+        <item >商住楼</item>
+        <item >商业综合体楼</item>
+        <item >酒店写字楼</item>
+    </string-array>
+
+    <string-array name="shoptargetformat">
+        <item >百货超市</item>
+        <item >酒店宾馆</item>
+        <item >家居建材</item>
+        <item >服饰鞋包</item>
+        <item >生活服务</item>
+        <item >美容美发</item>
+        <item >饮食美食</item>
+        <item >休闲娱乐</item>
+    </string-array>
+    <string-array name="shoptype">
+        <item >住宅底商</item>
+        <item >商业街商铺</item>
+        <item >临街门面</item>
+        <item >购物中心／百货</item>
+        <item >其它</item>
+    </string-array>
+    <string-array name="shopstate">
+        <item >营业中</item>
+        <item >闲置中</item>
+        <item >新铺</item>
+    </string-array>
+
+    <string-array name="area">
+        <item >朝阳区</item>
+        <item >海淀区</item>
+        <item >昌平区</item>
+        <item >东城区</item>
+        <item >西城区</item>
+    </string-array>
+
+    <string-array name="shop">
+        <item >王府井商圈</item>
+        <item >崇文门商圈</item>
+        <item >CBD商圈</item>
+        <item >双井商圈</item>
+        <item >朝外商圈</item>
+    </string-array>
+
+    <string-array name="house">
+        <item >风格雅苑</item>
+        <item >望京小区</item>
+        <item >爱仕达小区</item>
+        <item >伏安法小区</item>
+        <item >撒旦小区</item>
+    </string-array>
+
+    <string-array name="payment_way">
+        <item >等额本息</item>
+        <item >等额本金</item>
+    </string-array>
+
+    <string-array name="mortgage_year">
+        <item >15(180期)</item>
+        <item >16(192期)</item>
+        <item >17(204期)</item>
+        <item >18(216期)</item>
+        <item >19(228期)</item>
+        <item >20(240期)</item>
+    </string-array>
+
+    <string-array name="lending_rate">
+        <item >2017年8月1日基准利率</item>
+    </string-array>
+
+
+
+</resources>

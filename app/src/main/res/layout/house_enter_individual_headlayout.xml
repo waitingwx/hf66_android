@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/smssdk_white"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/house_individual_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微店铺"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorBlue"
+        android:textSize="20sp"
+        android:id="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/individual_certification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实名认证"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView3" />
+
+</RelativeLayout>

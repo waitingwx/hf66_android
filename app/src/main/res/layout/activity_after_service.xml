@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cqxy.fyb.AfterServiceActivity">
+
+    <include layout="@layout/house_enter_headlayout"></include>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/afterservice_servicetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/room_two_bg"
+            android:drawablePadding="9dp"
+            android:padding="5dp"
+            android:text="服务类型"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="25dp"
+        >
+
+
+
+        <RadioGroup
+            android:id="@+id/afterservice_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/afterservice_residence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住宅" />
+
+            <RadioButton
+                android:id="@+id/afterservice_commercial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商用" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/afterservice_residence_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/afterservice_group"
+            android:orientation="vertical"
+            android:visibility="invisible"
+
+            >
+
+            <RadioButton
+                android:id="@+id/afterservice_residence_fullmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全款" />
+
+            <RadioButton
+                android:id="@+id/afterservice_residence_loan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="贷款" />
+
+            <RadioButton
+                android:id="@+id/afterservice_residence_funds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公积金" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/afterservice_commercial_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/afterservice_group"
+            android:layout_alignBottom="@id/afterservice_group"
+            android:visibility="invisible"
+            >
+
+            <RadioButton
+                android:id="@+id/afterservice_commercial_fullmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全款"
+
+                />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/afterservice_residence_funds_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:layout_below="@id/afterservice_commercial_radiogroup"
+            android:layout_toEndOf="@id/afterservice_residence_radiogroup">
+
+            <RadioButton
+                android:id="@+id/afterservice_residence_funds_group_state_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国管"
+                />
+            <RadioButton
+                android:id="@+id/afterservice_residence_funds_group_city_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市管"
+                />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/room_two_bg"
+            android:drawablePadding="9dp"
+            android:padding="5dp"
+            android:text="资费标准"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全款："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/afterservice_fullfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贷款："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/afterservice_loan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公积金："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/afterservice_funds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_blue"
+        >
+        <Button
+            android:id="@+id/afterservice_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"></View>
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_radius_white"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlue"
+        android:text="选择您拥有的配套设施"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@color/gray_pressed"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        >
+        <LinearLayout
+            android:id="@+id/support_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="床"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+
+
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家具"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+
+                />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有线电视"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗衣机"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空调"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冰箱"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/support_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热水器"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宽带"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="煤气/天然气"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="厨具"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暖气"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/support_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电梯"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车库/车位"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="露台/花园"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微波炉"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储藏室/地下室"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/black_deep"
+                />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/support_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_button"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:text="确定"
+            />
+
+
+</LinearLayout>

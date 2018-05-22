@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cqxy.fyb.ContantUsActivity"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/house_enter_headlayout"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlue"
+            android:text="好房66"
+            android:textSize="20sp"
+            android:drawableTop="@mipmap/ontact_us_logo"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+
+            />
+        <ImageView
+            android:id="@+id/contact_erweima_img"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/erweima"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.37" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_radius_blue"
+        >
+        <Button
+            android:id="@+id/btn_cooperations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="寻求合作"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服邮箱："
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+            <TextView
+
+                android:id="@+id/contant_emial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1196061785@qq.com"
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服QQ："
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/contant_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1196061785"
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作时间："
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/contant_worktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周一到周五 8：00～18：00"
+                android:textColor="#666"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright@"
+                android:textColor="#666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  2017北京介联科技有限公司"
+                android:textColor="#666"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

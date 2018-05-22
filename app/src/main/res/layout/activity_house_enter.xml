@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head_enter"
+        layout="@layout/house_enter_headlayout" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/house_enter_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_enter"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabSelectedTextColor="@color/colorBlue"
+        app:tabTextAppearance="@style/TabLayoutSmallText"
+        app:tabTextColor="@color/smssdk_black" />
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/house_enter_tablayout"
+        android:layout_marginTop="5dp">
+
+        <include layout="@layout/house_enter_selectlayout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/house_enter_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarlayout_enter" />
+
+    <com.cqxy.view.LoadingView
+        android:id="@+id/loading_enter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
